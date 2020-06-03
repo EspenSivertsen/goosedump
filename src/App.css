@@ -117,7 +117,7 @@ body {
 
 .poster {
   height: auto;
-  width: 150px;
+  width: 100%;
 
   border: 1.5px solid #000;
 }
@@ -125,6 +125,7 @@ body {
 .game-info {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 .game-info p { flex-grow: 1; }
 
@@ -186,7 +187,7 @@ body {
 }
 
 
-
+/* RESPONSIVE */
 @media all and (max-width: 800px) {
   .nav {
     justify-content: space-around;

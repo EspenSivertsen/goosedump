@@ -20,7 +20,7 @@ class Games extends React.Component {
 					<div class="game-info">
 						<h2>{this.props.gameTitle}</h2>
             <p>{this.props.gameDesc}</p>
-						<a href='https://play.google.com/store/apps/details?id=com.Espen.CupYourBall&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
+						<a href={this.props.gameUrl}>
 							<img alt='Game Platform' src={this.props.gamePlatform} height='50px' />
             </a>
 					</div>
