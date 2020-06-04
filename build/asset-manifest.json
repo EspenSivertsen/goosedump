@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/goosedump/static/css/main.5d40742a.chunk.css",
+    "main.js": "/goosedump/static/js/main.8390bda6.chunk.js",
+    "main.js.map": "/goosedump/static/js/main.8390bda6.chunk.js.map",
+    "runtime-main.js": "/goosedump/static/js/runtime-main.9b20836b.js",
+    "runtime-main.js.map": "/goosedump/static/js/runtime-main.9b20836b.js.map",
+    "static/js/2.c953d227.chunk.js": "/goosedump/static/js/2.c953d227.chunk.js",
+    "static/js/2.c953d227.chunk.js.map": "/goosedump/static/js/2.c953d227.chunk.js.map",
+    "index.html": "/goosedump/index.html",
+    "precache-manifest.b432058a67d74a2c6194112a562b0d8f.js": "/goosedump/precache-manifest.b432058a67d74a2c6194112a562b0d8f.js",
+    "service-worker.js": "/goosedump/service-worker.js",
+    "static/css/main.5d40742a.chunk.css.map": "/goosedump/static/css/main.5d40742a.chunk.css.map",
+    "static/js/2.c953d227.chunk.js.LICENSE.txt": "/goosedump/static/js/2.c953d227.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/goosedump/static/media/logo.ee7cd8ed.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9b20836b.js",
+    "static/js/2.c953d227.chunk.js",
+    "static/css/main.5d40742a.chunk.css",
+    "static/js/main.8390bda6.chunk.js"
+  ]
+}
