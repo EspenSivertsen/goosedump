@@ -147,17 +147,17 @@ body {
 
 
 /*  FOOTER  */
+#footer { background-color: #666; }
 .footer-wrap {
   display: flex;
-  flex-flow: row wrap;
+  /*flex-flow: column wrap;*/
   /*justify-content: space-between; only if using logo */
   justify-content: center;
   align-items: center;
 }
 
-#footer { background-color: #666; }
 #footer li { display: inline-block; margin: 0 10px; }
-#footer ul li:hover { color: #00ace6; transition: color .2s ease-out; cursor: pointer; font-weight: bold; }
+#footer ul li:hover { /*color: #00ace6;*/color: #fffc36; transition: color .2s ease-out; cursor: pointer; font-weight: bold; }
 #footer li::after {
     display: block;
     content: attr(title);
@@ -165,6 +165,11 @@ body {
     height: 0;
     overflow: hidden;
     visibility: hidden;
+}
+#footer li span {
+    content: attr(title);
+    font-weight: bold;
+    height: 0;
 }
 
 .social-icons { margin-right: 0; }
@@ -174,10 +179,17 @@ body {
   margin-bottom: 20px;
   list-style: none;
   list-style-image: none;
-  text-decoration: none;
+  text-decoration: none; 
   align-self: flex-end;
 }
-.footer-navbar a { text-decoration: none; color: #fff; }
+.footer-navbar a { text-decoration: none; color: #ccc; }
+.social-icons { color: #ccc; }
+.atSymbol { color: #fffc36; }
+.github:hover span.TextGit { color: #fff }
+.github:hover span.TextHub { color: #000 }
+.twitter:hover span.TextTwitter { color: #00acee }
+.youtube:hover span.TextYou { color: #c4302b }
+.youtube:hover span.TextTube { color: #fff }
 
 .footer-logo { align-self: center; }
 .footer-logo img {
@@ -189,9 +201,8 @@ body {
 
 /* RESPONSIVE */
 @media all and (max-width: 800px) {
-  .nav {
-    justify-content: space-around;
-  }
+  .nav-title { display: none; }
+   .games { width: 45%; }
 }
 
 @media all and (max-width: 600px) {
@@ -200,25 +211,16 @@ body {
     flex-flow: column wrap;
     padding: 0;
   }
-  .nav-logo { display: none; }
-
-  .nav a {
-    text-align: center;
-    padding: 10px;
-    border-top: 1px solid rgba(255,255,255,0.3);
-    border-bottom: 1px solid rgba(0,0,0,0.1);
-  }
-
 
   .nav li:last-of-type a {
     border-bottom: none;
   }
+
 }
 
-/*  FOOTER */
-@media screen and (max-width: 1100px) {
-  .footer-wrap { flex-direction: column; }
-  .footer-social { text-align: center; }
-  .footer-logo, .footer-social { width: 100%; max-width: 100%; }
-  .footer-navbar { margin-bottom: 20px; }
+@media all and (max-width: 600px) {
+  .game-feature { display: none; }
 }
+
+
+

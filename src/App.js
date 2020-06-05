@@ -13,7 +13,6 @@ export class App extends React.Component {
         <NavBar />
         <div className="wrapper">
           <Home />
-          <p>test</p>
         </div>
         <Footer />
       </div>
