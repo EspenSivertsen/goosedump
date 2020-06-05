@@ -40,18 +40,21 @@ export class Home extends React.Component {
           gameDesc = {"The not so magic 8-ball that is also rude."}
           gamePlatform = {android}
           image = {"/img/noimage.jpg"}
+          gameUrl = {"https://play.google.com/store/apps/details?id=com.Espen.CupYourBall&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"}
         />
         <Games
           gameTitle = {"Turn Based Sports"}
           gameDesc = {"Take turn to try and score."}
           gamePlatform = {android}
           image = {"/img/noimage.jpg"}
+          gameUrl = {"https://play.google.com/store/apps/details?id=com.Espen.CupYourBall&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"}
         />
         <Games
           gameTitle = {"Piss Off!"}
           gameDesc = {"Have a piss, or piss off!"}
           gamePlatform = {android}
           image = {"/img/noimage.jpg"}
+          gameUrl = {"https://play.google.com/store/apps/details?id=com.Espen.CupYourBall&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"}
         />
         </div>
       </div>
