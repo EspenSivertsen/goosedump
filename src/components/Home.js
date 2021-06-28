@@ -1,11 +1,11 @@
 import React from 'react'
 import Games from './Games';
 
-import noImage from './noimage.jpg';
-import tetrisshooter from './tetrisshooter.png';
-import toppblokk from './toppblokk.png';
-import aktaer from './aktaer.png';
-import pc from './download.png';
+import noImage from '../images/noimage.jpg';
+import tetrisshooter from '../images/tetrisshooter.png';
+import toppblokk from '../images/toppblokk.png';
+import aktaer from '../images/aktaer.png';
+import pc from '../images/download.png';
 
 const android = "https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png";
 
