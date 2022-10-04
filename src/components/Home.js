@@ -13,7 +13,7 @@ export class Home extends React.Component {
   render() {
     return (
       <div>
-        <h1>My Games</h1>
+        <h1 style={"text-align:center;"}>My Games</h1>
         <div className="game-row">
         <Games
           gameTitle = {"Topp Blokk"}

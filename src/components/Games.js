@@ -28,15 +28,19 @@ function Games(props) {
     </div>**/
     <div id="games">
       <div className="game">
-        <div className="game-box">
-          <div className="game-feature">
-            {<img src={props.image} className="poster" height="150px" onClick={toggleModal}/>}
+          <div className="game-box">
+            <div className="game-feature">
+              <h2>{props.gameTitle}</h2>
+              {<img src={props.image} className="poster" height="150px" onClick={toggleModal}/>}
+            </div>
           </div>
-            <div className="game-info">
+        </div>
+        <Modal open={open} onClose={toggleModal} center>
+          <h2>Simple centered modal</h2>
+          <div className="game-info">
               <h2>{props.gameTitle}</h2>
               <p>{props.gameDesc}</p>
             </div>
-          </div>
           <div className="game-footer">
             <a href={props.gameUrl}>
               <img alt='Game Platform' src={props.gamePlatform} height='50px' />
@@ -45,9 +49,6 @@ function Games(props) {
               {liked ? "Liked" : "Like"}
             </button>
           </div>
-        </div>
-        <Modal open={open} onClose={toggleModal} center>
-          <h2>Simple centered modal</h2>
         </Modal>      
     </div>
   );
