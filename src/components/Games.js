@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import "./Games.css";
 import 'react-responsive-modal/styles.css';
 import Modal from 'react-responsive-modal';
 
@@ -30,16 +31,23 @@ function Games(props) {
       <div className="game">
           <div className="game-box">
             <div className="game-feature">
-              <h2>{props.gameTitle}</h2>
+              <h2 className="game-title">{props.gameTitle}</h2>
               {<img src={props.image} className="poster" height="150px" onClick={toggleModal}/>}
             </div>
           </div>
         </div>
-        <Modal open={open} onClose={toggleModal} center>
-          <h2>Simple centered modal</h2>
+        <Modal classNames={{
+          overlay: 'game-modal-overlay',
+          modal: 'game-modal',
+        }} 
+        open={open} 
+        onClose={toggleModal} 
+        center
+        >
           <div className="game-info">
               <h2>{props.gameTitle}</h2>
-              <p>{props.gameDesc}</p>
+              <p>Category: {props.category}</p>
+              <p className="game-description">Description: {props.gameDesc}</p>
             </div>
           <div className="game-footer">
             <a href={props.gameUrl}>

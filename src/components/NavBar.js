@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import "./NavBar.css";
 import titleLogo from '../images/GoosedumpTitle.png';
 import logo from '../images/2018logo4.png';
 import gameLogo from '../images/GamesTitle.png';
@@ -14,7 +15,7 @@ export class NavBar extends React.Component {
             <a href="#"> <img src={logo} className="nav-logo" /></a>
             {/* <img src={gameLogo} class="nav-title" /> */}
           </div>
-          <div id="navbar" className="nav">
+          <div id="navbar" className="nav navbar-header">
             <div className="nav-list">
               <ul className="nav">
                 <a href="#home" className="active-nav"><li>Home</li></a>

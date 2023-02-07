@@ -1,0 +1,81 @@
+/* CSS FOR NAVBAR */
+
+.navbar {
+    background-color: #552c2c;
+    width: 100%;
+    /*padding: 1em;*/
+  }
+  
+  .nav-logo {
+    display: inline-block;
+    max-width: 150px;
+    border-radius: 45px;
+  }
+  .nav-title {
+    display: inline-block;
+    height: auto;
+    width: 300px; /* Games is being distorted, but this keeps circle in center */
+    min-height: 50px;
+    margin: 0 1em;
+  }
+  
+  .nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+  }
+  
+  .navbar-header {
+    background-color: #472929;  
+  }
+  
+  .nav li {
+    padding: 5px;
+  }
+  .nav a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+  }
+  .nav-list a:hover {
+    transform: scale(1.1);
+  }
+  .nav-logo:hover {
+    transform: scale(1.1);
+  }
+  
+  .hamburger {
+    display: none;
+    padding: 5px;
+    color: #000;
+    font-size: 18px;
+  }
+
+  /* RESPONSIVE */
+  
+  @media all and (max-width: 800px) {
+    .nav-title { display: none; }
+     .games { width: 45%; }
+  }
+  
+  @media all and (max-width: 600px) {
+    .nav {
+      -webkit-flex-flow: column wrap;
+      flex-flow: column wrap;
+      padding: 0;
+    }
+  
+    .nav li:last-of-type a {
+      border-bottom: none;
+    }
+  
+    .navbar ul { display: none; }
+    .hamburger { display: block; }
+  
+  }

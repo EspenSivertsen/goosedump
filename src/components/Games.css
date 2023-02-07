@@ -1,0 +1,107 @@
+/* CSS FOR GAMES COMPONENT */
+
+.game-header {
+    text-align: center;
+    font-weight: 400;
+  }
+  
+  .collapse {
+      display: none
+    }
+  
+    .collapse.in {
+      display: block
+    }
+  
+  
+  #games {
+    flex: 1 0 21%;
+  }
+  
+  .game {
+    height: 100%;
+  }
+  
+  .game-box {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    padding: 0 10px;
+  }
+  
+  .game-feature > img:hover {
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  }
+  
+  .game-feature {
+    align-self: center;
+  }
+  .game-feature > h2 { 
+    text-align: center; 
+    margin-bottom: 10px;
+    margin-top: 0;
+  }
+  
+  .poster {
+    height: 300px;
+    width: 200px;
+    object-fit: cover;  
+  
+    border-radius: 5px;
+  }
+  
+
+  /* MODAL */
+  .game-modal-overlay {
+    background-color: #3333338a;
+  }
+  .game-modal {
+    width: 600px;
+    height: 400px;
+    background: #333333!important;
+    color: #fff;
+  }
+
+  .game-info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .game-description { 
+    flex-grow: 1; 
+  }
+
+  .game-footer {
+    width: 100%;
+  }
+  
+  /* RESPONSIVE */
+
+  @media all and (max-width: 1000px) {
+    .wrapper {
+      width: 100%;
+    }
+    #games {
+      width: 30%;
+      display: flex;
+      justify-content: center;
+    }
+    .game-row {
+      justify-content: center;
+    }
+  }
+  
+  @media all and (max-width: 600px) {
+    .game-feature { 
+
+    }
+    .game-row {
+      flex-flow: column nowrap;
+    }
+    #games {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+  }

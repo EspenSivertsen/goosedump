@@ -5,8 +5,14 @@ html, body {
   padding: 0;
 }
 body {
-  background-color: #333333;
-  color: #fff;
+  font-family: roboto, serif;
+  background-color: #E6E6E6; /*#daa520;*/
+  color: #000;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300;
+  font-family: roboto, serif;
 }
 
 .App {
@@ -17,232 +23,26 @@ body {
 }
 
 .wrapper {
-  width: 80%;
+  width: 70%;
   margin: auto;
   flex-grow: 1;
 }
 
-.navbar {
-  background-color: #552c2c;
-  width: 100%;
-  /*padding: 1em;*/
-}
-
-.nav-logo {
-  display: inline-block;
-  max-width: 150px;
-  border: 2px solid #fff;
-  border-radius: 90%;
-}
-.nav-title {
-  display: inline-block;
-  height: auto;
-  width: 300px; /* Games is being distorted, but this keeps circle in center */
-  min-height: 50px;
-  margin: 0 1em;
-}
-
-.nav {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  list-style: none;
-  text-align: center;
-}
-
-.nav li {
-  padding: 1em;
-}
-.nav a {
-  color: #fff;
-  text-decoration: none;
-  display: block;
-  padding: 1em;
-}
-.nav a:hover {
-  transform: scale(1.1);
-}
-
-.hamburger {
-  display: none;
-  padding: 5px;
-  color: #000;
-  font-size: 18px;
-}
-
-/* HOME */
 .game-row {
   display: flex;
   flex-flow: row wrap;
-  justify-content: flex-start;
-}
-
-/* Game Box */
-/*.games2 {
-  margin: 1em 0;
-}
-.games2 h5, .games2 h2 { margin: 0; }
-.games2 h5 { margin-top: 5px; }
-.gamebox {
-  border: 1px solid #000;
-}
-.poster2 {
-  height: auto;
-  width: 200px;
-
-  border: 1.5px solid #000;
-}*/
-
-.collapse {
-    display: none
-  }
-
-  .collapse.in {
-    display: block
-  }
-
-
-#games {
-  margin: 1em 0;
-  width: 25%;
-}
-
-.game {
-  /*display: flex;
-  flex-direction: row-reverse;
-  justify-content: flex-start;*/
-  height: 100%;
-  /*border-radius: 3%;
-  border: 1px solid rgba(0, 0, 0, 0.562);*/
-}
-
-.game-box {
-  display: flex;
-  flex-direction: row-reverse;
-  padding: 10px;
-}
-
-.game-feature {
-  align-self: center;
-  margin-left: auto;
-}
-.game-feature > h2 { text-align: center; margin-bottom: 10px;}
-
-.poster {
-  height: auto;
-  width: 100%;
-
-  border: 1.5px solid #000;
-}
-
-.game-info {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-.game-info p { flex-grow: 1; }
-
-.game-footer {
-  width: 100%;
-}
-
-
-/*.game-box {
-  height: auto;
-  width: 35%;
-  max-width: 30%;
-  border: 1px solid #fff;
-  margin: 1% 0;
-}
-
-.game-img {
-  height: auto;
-  width: 80%;
-  border: 1px solid #000;
-}*/
-
-
-
-/*  FOOTER  */
-#footer { background-color: #666; }
-.footer-wrap {
-  display: flex;
-  /*flex-flow: column wrap;*/
-  /*justify-content: space-between; only if using logo */
   justify-content: center;
+  margin: auto;
+  width: 80%;
+}
+
+/* HOME */
+
+.filter-container {
+  display: flex;
   align-items: center;
+  gap: 10px;
 }
-
-#footer li { display: inline-block; margin: 0 10px; }
-#footer ul li:hover { /*color: #00ace6;*/color: #fffc36; transition: color .2s ease-out; cursor: pointer; font-weight: bold; }
-#footer li::after {
-    display: block;
-    content: attr(title);
-    font-weight: bold;
-    height: 0;
-    overflow: hidden;
-    visibility: hidden;
+#category-list {
+  padding: 5px;
 }
-#footer li span {
-    content: attr(title);
-    font-weight: bold;
-    height: 0;
-}
-
-.social-icons { margin-right: 0; }
-
-.footer-navbar {
-  padding: 0;
-  margin-bottom: 20px;
-  list-style: none;
-  list-style-image: none;
-  text-decoration: none; 
-  align-self: flex-end;
-}
-.footer-navbar a { text-decoration: none; color: #ccc; }
-.social-icons { color: #ccc; }
-.atSymbol { color: #fffc36; }
-.github:hover span.TextGit { color: #fff }
-.github:hover span.TextHub { color: #000 }
-.twitter:hover span.TextTwitter { color: #00acee }
-.youtube:hover span.TextYou { color: #c4302b }
-.youtube:hover span.TextTube { color: #fff }
-
-.footer-logo { align-self: center; }
-.footer-logo img {
-  max-width: 100%;
-  max-height: 50px;
-  height: auto;
-}
-
-
-/* RESPONSIVE */
-@media all and (max-width: 800px) {
-  .nav-title { display: none; }
-   .games { width: 45%; }
-}
-
-@media all and (max-width: 600px) {
-  .nav {
-    -webkit-flex-flow: column wrap;
-    flex-flow: column wrap;
-    padding: 0;
-  }
-
-  .nav li:last-of-type a {
-    border-bottom: none;
-  }
-
-  .navbar ul { display: none; }
-  .hamburger { display: block; }
-
-}
-
-@media all and (max-width: 600px) {
-  .game-feature { display: none; }
-}
-
-
-
