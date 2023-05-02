@@ -10,6 +10,7 @@
     display: inline-block;
     max-width: 150px;
     border-radius: 45px;
+    padding: 1em;
   }
   .nav-title {
     display: inline-block;
@@ -43,12 +44,12 @@
     display: block;
     padding: 1em;
   }
-  .nav-list a:hover {
+  /* .nav-list a:hover {
     transform: scale(1.1);
   }
   .nav-logo:hover {
     transform: scale(1.1);
-  }
+  } */
   
   .hamburger {
     display: none;

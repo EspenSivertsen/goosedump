@@ -12,10 +12,10 @@ export class NavBar extends React.Component {
         <div className="navbar">
           <div className="nav">
             <img src={titleLogo} className="nav-title" />
-            <a href="#"> <img src={logo} className="nav-logo" /></a>
+            <img src={logo} className="nav-logo" />
             {/* <img src={gameLogo} class="nav-title" /> */}
           </div>
-          <div id="navbar" className="nav navbar-header">
+          {/* <div id="navbar" className="nav navbar-header">
             <div className="nav-list">
               <ul className="nav">
                 <a href="#home" className="active-nav"><li>Home</li></a>
@@ -26,7 +26,7 @@ export class NavBar extends React.Component {
               </ul>
               <button className="hamburger"></button>
             </div>
-          </div>
+          </div> */}
         </div>
       </nav>
     );

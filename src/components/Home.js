@@ -7,8 +7,8 @@ import tetrisshooter from '../images/tetrisshooter.png';
 import toppblokk from '../images/toppblokk.png';
 import aktaer from '../images/aktaer.png';
 import pc from '../images/download.png';
-
-const android = "https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png";
+import android from '../images/google-play-badge.png';
+//const android = "https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png";
 
 export class Home extends React.Component {
   render() {

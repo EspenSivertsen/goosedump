@@ -11,7 +11,7 @@ export class App extends React.Component {
     return (
       <div className="App">
         <NavBar />
-        <div className="wrapper">
+        <div className="wrapper margin-bot">
           <Home />
         </div>
         <Footer />

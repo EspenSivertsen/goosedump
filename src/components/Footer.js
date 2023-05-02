@@ -8,9 +8,9 @@ export class Footer extends React.Component {
 
 			<div className="footer-wrap">
 				<ul className="footer-navbar">
-					<a href="index.html#games"><li title="Blog">Blog</li></a>
-					<a href="mailto:goosedumpgames@gmail.com"><li title="Contact">Contact</li></a>
-					<a href="https://espensivertsen.me"><li title="Games">Espen</li></a>
+					{/* <a href="index.html#games"><li title="Blog">Blog</li></a>
+					<a href="mailto:goosedumpgames@gmail.com"><li title="Contact">Contact</li></a> */}
+					<a href="https://espensivertsen.me"><li>Espen Sivertsen</li></a>
 				</ul>
 			</div>
 			<div className="footer-wrap">

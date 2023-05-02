@@ -2,7 +2,7 @@
 
 .game-header {
     text-align: center;
-    font-weight: 400;
+    font-weight: 500;
   }
   
   .collapse {
@@ -15,7 +15,7 @@
   
   
   #games {
-    flex: 1 0 21%;
+    /*flex: 1 0 21%;*/
   }
   
   .game {
@@ -36,6 +36,7 @@
   
   .game-feature {
     align-self: center;
+    margin-top: 20px;
   }
   .game-feature > h2 { 
     text-align: center; 
@@ -91,11 +92,31 @@
       justify-content: center;
     }
   }
-  
-  @media all and (max-width: 600px) {
-    .game-feature { 
 
+  @media all and (max-width: 800px) {
+    .game-row {
+      flex-flow: row wrap;
+      width: 100%;
     }
+    #games {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  @media all and (max-width: 600px) {
+    .game-row {
+      flex-flow: row wrap;
+      width: 100%;
+    }
+    #games {
+      display: flex;
+      justify-content: center;
+      width: 49%;
+    }
+  }
+  
+  @media all and (max-width: 400px) {
     .game-row {
       flex-flow: column nowrap;
     }

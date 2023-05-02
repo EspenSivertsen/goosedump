@@ -31,8 +31,8 @@ function Games(props) {
       <div className="game">
           <div className="game-box">
             <div className="game-feature">
-              <h2 className="game-title">{props.gameTitle}</h2>
               {<img src={props.image} className="poster" height="150px" onClick={toggleModal}/>}
+              <h2 className="game-title">{props.gameTitle}</h2>
             </div>
           </div>
         </div>
@@ -53,9 +53,9 @@ function Games(props) {
             <a href={props.gameUrl}>
               <img alt='Game Platform' src={props.gamePlatform} height='50px' />
             </a>
-            <button onClick={() => setLiked(!liked)}>
+            {/* <button onClick={() => setLiked(!liked)}>
               {liked ? "Liked" : "Like"}
-            </button>
+            </button> */}
           </div>
         </Modal>      
     </div>
