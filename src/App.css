@@ -5,7 +5,7 @@ html, body {
   padding: 0;
 }
 body {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: proxima-nova, Helvetica, sans-serif;
   font-weight: 400;
   color: #404040;
   min-height: 100%;
@@ -26,18 +26,58 @@ h1, h2, h3, h4, h5, h6 {
 .wrapper {
   margin: auto;
   flex-grow: 1;
+  width: 80%;
 }
 
 .margin-bot {
   margin-bottom: 20px;
 }
 
-.game-row {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
+section.grid {
   margin: auto;
-  width: 70%;
+  display: -ms-grid;
+  display: grid;
+  gap: 1rem;
+  width: 92%;
+  max-width: 1000px;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+}
+
+section.grid .grid-upper .grid-row, section.grid .grid-middle .grid-row, section.grid .grid-lower .grid-row {
+  gap: 1rem;
+  display: -ms-grid;
+  display: grid;
+  position: relative;
+  width: 100%;
+}
+
+section.grid .grid-upper, section.grid .grid-middle, section.grid .grid-lower {
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  display: -ms-grid;
+  display: grid;
+}
+
+section.grid .grid-upper .grid-row {
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  position: relative;
+  justify-items: center;
+}
+
+section.grid .grid-middle .grid-row {
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+
+section.grid .grid-lower {
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  position: relative;
+  justify-items: center;
 }
 
 /* HOME */

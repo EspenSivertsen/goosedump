@@ -28,12 +28,10 @@ function Games(props) {
       </div>
     </div>**/
     <div id="games">
-      <div className="game">
-          <div className="game-box">
-            <div className="game-feature">
-              {<img src={props.image} className="poster" height="150px" onClick={toggleModal}/>}
-              <h2 className="game-title">{props.gameTitle}</h2>
-            </div>
+        <div className="game-container">
+          <div className="game-feature">
+            {<img src={props.image} className="poster" height="150px" onClick={toggleModal}/>}
+            <h2 className="game-title">{props.gameTitle}</h2>
           </div>
         </div>
         <Modal classNames={{
