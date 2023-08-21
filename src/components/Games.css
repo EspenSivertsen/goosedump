@@ -101,24 +101,24 @@
   /* RESPONSIVE */
 
   @media all and (max-width: 1000px) {
-    .wrapper {
+    /* .wrapper {
       width: 100%;
-    }
+    } */
     #games {
-      width: 30%;
       display: flex;
       justify-content: center;
+      flex-direction: column;
     }
-    .game-row {
+    .grid-row {
       justify-content: center;
     }
   }
 
   @media all and (max-width: 800px) {
-    .game-row {
+    /* .grid-row {
       flex-flow: row wrap;
       width: 100%;
-    }
+    } */
     #games {
       display: flex;
       justify-content: center;
@@ -126,21 +126,21 @@
   }
 
   @media all and (max-width: 600px) {
-    .game-row {
+    .grid-row {
       flex-flow: row wrap;
       width: 100%;
     }
     #games {
       display: flex;
       justify-content: center;
-      width: 49%;
+      /* width: 49%; */
     }
   }
   
   @media all and (max-width: 400px) {
-    .game-row {
+    /* .grid-row {
       flex-flow: column nowrap;
-    }
+    } */
     #games {
       width: 100%;
       display: flex;

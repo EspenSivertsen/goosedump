@@ -35,41 +35,43 @@ h1, h2, h3, h4, h5, h6 {
 
 section.grid {
   margin: auto;
-  display: -ms-grid;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 1rem;
-  width: 92%;
+  width: 100%;
   max-width: 1000px;
-  -ms-grid-columns: 1fr;
-  grid-template-columns: 1fr;
 }
 
 section.grid .grid-upper .grid-row, section.grid .grid-middle .grid-row, section.grid .grid-lower .grid-row {
-  gap: 1rem;
+  /* gap: 1rem;
   display: -ms-grid;
   display: grid;
   position: relative;
-  width: 100%;
+  width: 100%; */
+  gap: 1rem;
+  display: flex;
+  position: relative;
+  flex-direction: row;
 }
 
 section.grid .grid-upper, section.grid .grid-middle, section.grid .grid-lower {
-  -ms-grid-columns: 1fr;
+  /* -ms-grid-columns: 1fr;
   grid-template-columns: 1fr;
-  gap: 1rem;
   display: -ms-grid;
-  display: grid;
+  display: grid; */
+  gap: 1rem;
 }
 
 section.grid .grid-upper .grid-row {
-  -ms-grid-columns: 1fr;
-  grid-template-columns: 1fr;
+  /* -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr; */
   position: relative;
   justify-items: center;
 }
 
 section.grid .grid-middle .grid-row {
-  -ms-grid-columns: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
+  /* -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr; */
 }
 
 section.grid .grid-lower {
@@ -78,6 +80,8 @@ section.grid .grid-lower {
   grid-template-columns: 1fr 1fr 1fr;
   position: relative;
   justify-items: center;
+  /* display: flex;
+  flex-direction: column; */
 }
 
 /* HOME */
