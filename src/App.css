@@ -49,7 +49,7 @@ section.grid .grid-upper .grid-row, section.grid .grid-middle .grid-row, section
   position: relative;
   width: 100%; */
   gap: 1rem;
-  display: flex;
+  display: grid;
   position: relative;
   flex-direction: row;
 }
@@ -79,8 +79,8 @@ section.grid .grid-lower {
   -ms-grid-columns: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   position: relative;
-  justify-items: center;
-  /* display: flex;
+  /*justify-items: center;
+   display: flex;
   flex-direction: column; */
 }
 

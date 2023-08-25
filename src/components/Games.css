@@ -109,16 +109,18 @@
       justify-content: center;
       flex-direction: column;
     }
-    .grid-row {
-      justify-content: center;
-    }
   }
 
   @media all and (max-width: 800px) {
-    /* .grid-row {
-      flex-flow: row wrap;
-      width: 100%;
-    } */
+    section.grid .grid-lower .grid-row {
+      gap: 1rem;
+      display: flex;
+      position: relative;
+    }
+    section.grid .grid-lower {
+      display: grid;
+      grid-template-columns: none;
+    }
     #games {
       display: flex;
       justify-content: center;
