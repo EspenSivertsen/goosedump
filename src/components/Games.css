@@ -75,26 +75,26 @@
   
 
   /* MODAL */
-  .game-modal-overlay {
+  .modal-game-overlay {
     background-color: #3333338a;
   }
-  .game-modal {
+  .modal-game {
     width: 600px;
     height: 400px;
     background: #333333!important;
     color: #fff;
   }
 
-  .game-info {
+  .modal-game-info {
     display: flex;
     flex-direction: column;
     width: 100%;
   }
-  .game-description { 
+  .modal-game-description { 
     flex-grow: 1; 
   }
 
-  .game-footer {
+  .modal-game-footer {
     width: 100%;
   }
   
@@ -135,14 +135,10 @@
     #games {
       display: flex;
       justify-content: center;
-      /* width: 49%; */
     }
   }
   
   @media all and (max-width: 400px) {
-    /* .grid-row {
-      flex-flow: column nowrap;
-    } */
     #games {
       width: 100%;
       display: flex;

@@ -35,19 +35,22 @@ function Games(props) {
           </div>
         </div>
         <Modal classNames={{
-          overlay: 'game-modal-overlay',
-          modal: 'game-modal',
+          overlay: 'modal-game-overlay',
+          modal: 'modal-game',
         }} 
         open={open} 
         onClose={toggleModal} 
         center
         >
-          <div className="game-info">
-              <h2>{props.gameTitle}</h2>
-              <p>Category: {props.category}</p>
-              <p className="game-description">Description: {props.gameDesc}</p>
-            </div>
-          <div className="game-footer">
+          <div className="modal-game-image">
+
+          </div>
+          <div className="modal-game-info">
+            <h2>{props.gameTitle}</h2>
+            <p>Category: {props.category}</p>
+            <p className="modal-game-description">Description: {props.gameDesc}</p>
+          </div>
+          <div className="modal-game-footer">
             <a href={props.gameUrl}>
               <img alt='Game Platform' src={props.gamePlatform} height='50px' />
             </a>
