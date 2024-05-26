@@ -3,9 +3,13 @@ import Games from './Games';
 import FilterList from './FilterList';
 
 import noImage from '../images/noimage.jpg';
-import tetrisshooter from '../images/tetrisshooter.png';
-import toppblokk from '../images/toppblokk.png';
-import aktaer from '../images/aktaer.png';
+import tetrisshooter from '../images/game-tetrisshooter.png';
+import toppblokk from '../images/game-toppblokk.png';
+import aktaer from '../images/game-aktaer.png';
+import cupyourball from '../images/game-cupyourball.jpg';
+import pissoff from '../images/game-pissoff.png';
+import turnbasedsports from '../images/game-turnbasedsports.jpg';
+import rude8ball from '../images/game-rude8ball.png';
 import pc from '../images/download.png';
 import android from '../images/google-play-badge.png';
 //const android = "https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png";
@@ -15,7 +19,7 @@ export class Home extends React.Component {
     return (
       <div>
         <h1 className="game-header">My Games</h1>
-        <section class="grid">
+        <section className="grid">
           <div className="grid-upper">
             <div className="grid-row">
               <Games
@@ -23,7 +27,7 @@ export class Home extends React.Component {
                   gameDesc = {"Have a piss, or piss off!"}
                   gamePlatform = {android}
                   category = {"Android"}
-                  image = {noImage}
+                  image = {pissoff}
                   gameUrl = {"https://play.google.com/store/apps/details?id=com.GoosedumpSivertsen.PissOff"}
                 />
               </div>
@@ -42,7 +46,7 @@ export class Home extends React.Component {
                 gameDesc = {"Take turn to try and score."}
                 gamePlatform = {android}
                 category = {"Android"}
-                image = {noImage}
+                image = {turnbasedsports}
                 gameUrl = {"https://play.google.com/store/apps/details?id=com.GoosedumpSivertsen.TurnBasedSports"}
               />
               <Games
@@ -50,7 +54,7 @@ export class Home extends React.Component {
                 gameDesc = {"Grab your ball and swipe it up in the cup."}
                 gamePlatform = {android}
                 category = {"Android"}
-                image = {noImage}
+                image = {cupyourball}
                 gameUrl = {"https://play.google.com/store/apps/details?id=com.Espen.CupYourBall"}
               />
             </div>
@@ -60,7 +64,7 @@ export class Home extends React.Component {
                 gameDesc = {"The not so magic 8-ball that is also rude."}
                 gamePlatform = {android}
                 category = {"Android"}
-                image = {noImage}
+                image = {rude8ball}
                 gameUrl = {"https://play.google.com/store/apps/details?id=com.GoosedumpSivertsen.rude8ball"}
               />
               <Games
@@ -79,7 +83,7 @@ export class Home extends React.Component {
                 gameDesc = {"A tribute to Achtung Die Kurve."}
                 gamePlatform = {pc}
                 category = {"Windows"}
-                image = {noImage}
+                image = {aktaer}
                 gameUrl = {"https://www.dropbox.com/s/pwr9eh7zp3oqxdd/AktaEr.zip?dl=0"}
               />
               <Games
@@ -87,7 +91,7 @@ export class Home extends React.Component {
                 gameDesc = {"The tetrominos have gone rogue, take out the other before he takes you out."}
                 gamePlatform = {pc}
                 category = {"Windows"}
-                image = {noImage}
+                image = {tetrisshooter}
                 gameUrl = {"https://www.dropbox.com/s/1fkjzok4fgxe0qe/TetrisShooter.zip?dl=0"}
               />
             </div>

@@ -10,7 +10,6 @@
 }
 
 #footer li { display: inline-block; margin: 0 10px; }
-#footer ul li:hover { /*color: #00ace6;*/color: #fffc36; transition: color .2s ease-out; cursor: pointer; font-weight: bold; }
 #footer li::after {
     display: block;
     content: attr(title);
@@ -36,13 +35,19 @@
   align-self: flex-end;
 }
 .footer-navbar a { text-decoration: none; color: #ccc; }
-.social-icons { color: #ccc; }
-.atSymbol { color: #fffc36; }
-.github:hover span.TextGit { color: #fff }
+.social-icons { color: #ccc; font-weight: bold; }
+.at-symbol-text { color: #767528; }
+
+.hover-effect-links {  cursor: pointer; font-weight: bold; transition: color .2s ease-in; } 
+.social-icons:hover .social-icons-text { color: #fff; }
+.social-icons:hover .at-symbol-text { color: #fffc36; }
+.espen-homepage:hover { color: #fffc36; }
+
+/* .github:hover span.TextGit { color: #fff }
 .github:hover span.TextHub { color: #000 }
 .twitter:hover span.TextTwitter { color: #00acee }
 .youtube:hover span.TextYou { color: #c4302b }
-.youtube:hover span.TextTube { color: #fff }
+.youtube:hover span.TextTube { color: #fff } */
 
 .footer-logo { align-self: center; }
 .footer-logo img {
