@@ -1,5 +1,23 @@
 /* CSS FOR GAMES COMPONENT */
 
+/* CSS HEX PALETTE
+--aureolin: #eae125ff;
+--caput-mortuum: #552c2cff;
+--redwood: #9d4d4dff;
+--cerulean: #337ca0ff;
+--slate-blue: #7067cfff; */
+
+html {
+  scrollbar-gutter: stable;
+}
+
+.flex-container {
+  min-height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 .game-header {
     text-align: center;
     font-weight: 500;
@@ -10,15 +28,19 @@
   }
   
   .collapse {
-      display: none
+      display: none;
     }
   
     .collapse.in {
-      display: block
+      display: block;
     }
   
   
   #games {
+    width: 100%;
+  }
+
+  .game-expanded {
     width: 100%;
   }
 
@@ -30,7 +52,7 @@
   section.grid .grid-upper .game-container .game-feature, section.grid .grid-middle .game-container .game-feature, section.grid .grid-lower .game-container .game-feature {
     background: transparent;
     border-image-slice: 1;
-    border-image-source: linear-gradient(to bottom, #00FFAD, #541DAB);
+    /* border-image-source: linear-gradient(to bottom, #00FFAD, #541DAB); */
   }
 
   /* .game-box {
@@ -40,7 +62,7 @@
     padding: 0 10px;
   } */
   
-  .game-feature > img:hover {
+  .game-feature > img:hover, #games:hover {
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
   }
@@ -49,16 +71,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: transparent;
-    border-image-slice: 1;
-    border-image-source: linear-gradient(to bottom, #00FFAD, #541DAB);
-    border: 5px solid;
+    border: 3px solid #000;
   }
   .game-feature > h2 { 
     text-align: center;
     margin: 0;
     padding: 10px 0;
-    background-color: rgb(43, 45, 46);
+     background-color: #9d4d4d; /* cf4e4e */
     color: #f6f4f1;
     width: 100%;
     text-transform: uppercase;
@@ -69,33 +88,80 @@
     height: 300px;
     width: 100%;
     object-fit: cover;  
-  
-    border-radius: 5px;
   }
   
 
   /* MODAL */
-  .modal-game-overlay {
-    background-color: #3333338a;
-  }
+
   .modal-game {
     width: 600px;
-    height: 400px;
-    background: #333333!important;
-    color: #fff;
+    height: 300px;
+    background: #e9e9e9!important;
+    /* color: #fff; */
+    border-radius: 0.5rem;
+  }
+
+  .modal-game h2 {
+    font-size: 175%;
+    margin-bottom: 0;
+  }
+
+  .modal-game h3 {
+    margin-bottom: 0.7rem;
+    font-size: 125%;
+  }
+
+  .modal-game-image {
+    align-self: center;
+  }
+  .modal-poster {
+    object-fit: cover;
+    border-radius: 5px;
+    max-width: 150px;
+  }
+
+  .modal-game-overlay {
+    background-color: #3333338a;
   }
 
   .modal-game-info {
     display: flex;
     flex-direction: column;
-    width: 100%;
-  }
-  .modal-game-description { 
-    flex-grow: 1; 
+    flex-grow: 1;
+    margin-left: 2em;
+    /* width: 75%; */
   }
 
   .modal-game-footer {
     width: 100%;
+    margin-top: auto;
+  }
+
+  .modal-game-hr {
+    border-width: 5px;
+    border-color: #3a7664;
+  }
+  .modal-game-info hr {
+    border-color: #ffffff05;
+    border-width: 1px;
+    margin: 0;
+  }
+  hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+    margin: 24px 0;
+    padding: 0;
+  }
+
+  .react-responsive-modal-closeButton {
+    background-color: #b6b6b6!important;
+    border-radius: 50%;
+  }
+  .react-responsive-modal-closeButton:hover {
+    background-color: #c0c0c0;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
   }
   
   /* RESPONSIVE */
@@ -136,6 +202,13 @@
       display: flex;
       justify-content: center;
     }
+    .modal-game {
+      width: 400px;
+      height: auto;
+    }
+    .modal-game-info {
+      margin-left: 0;
+    }
   }
   
   @media all and (max-width: 400px) {
@@ -143,5 +216,9 @@
       width: 100%;
       display: flex;
       justify-content: center;
+    }
+    .modal-game {
+      width: auto;
+      height: auto;
     }
   }
