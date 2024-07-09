@@ -57,8 +57,6 @@ export class Home extends React.Component {
                 image = {cupyourball}
                 gameUrl = {"https://play.google.com/store/apps/details?id=com.Espen.CupYourBall"}
               />
-            </div>
-            <div className="grid-row">
               <Games
                 gameTitle = {"Rude 8-Ball"}
                 gameDesc = {"The not so magic 8-ball that is also rude."}
@@ -67,7 +65,10 @@ export class Home extends React.Component {
                 image = {rude8ball}
                 gameUrl = {"https://play.google.com/store/apps/details?id=com.GoosedumpSivertsen.rude8ball"}
               />
-              <Games
+            </div>
+
+            <div className='grid-row'>
+            <Games
                 gameTitle = {"Topp Blokk"}
                 gameDesc = {"A tetromino climbing game."}
                 gamePlatform = {pc}
@@ -75,9 +76,6 @@ export class Home extends React.Component {
                 image = {toppblokk}
                 gameUrl = {"https://www.dropbox.com/s/1erq64cqop1991l/Topp%20Blokk.zip?dl=0"}
               />
-            </div>
-
-            <div className='grid-row'>
               <Games
                 gameTitle = {"Akta Er"}
                 gameDesc = {"A tribute to Achtung Die Kurve."}

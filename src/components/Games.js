@@ -37,12 +37,14 @@ function Games(props) {
     </div>**/
     // <div id='games' className='game' onClick={handClick}>
       <div id='games'>
+        
         <div className='game-container'>
-          <div className='game-feature'>
             {<img src={props.image} className='poster' height='150px' onClick={toggleModal}/>}
+          <div className='game-feature'>
             <h2 className='game-title'>{props.gameTitle}</h2>
           </div>
         </div>
+        
         <Modal classNames={{
           overlay: 'modal-game-overlay',
           modal: 'modal-game',

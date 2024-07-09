@@ -1,7 +1,7 @@
 /* CSS FOR NAVBAR */
 
 .navbar {
-    background-color: #552c2c;
+    /* background-color: #dd4444; */
     width: 100%;
     /*padding: 1em;*/
   }
@@ -32,7 +32,7 @@
   }
   
   .navbar-header {
-    background-color: #472929;  
+    /* background-color: #472929;   */
   }
   
   .nav li {

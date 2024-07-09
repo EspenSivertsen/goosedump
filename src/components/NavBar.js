@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import "./NavBar.css";
 import titleLogo from '../images/GoosedumpTitle.png';
 import logo from '../images/2018logo4.png';
+import logo_light from '../images/gooselogo_lighter.png';
 import gameLogo from '../images/GamesTitle.png';
 
 export class NavBar extends React.Component {
@@ -12,7 +13,7 @@ export class NavBar extends React.Component {
         <div className="navbar">
           <div className="nav">
             <img src={titleLogo} className="nav-title" />
-            <img src={logo} className="nav-logo" />
+            <img src={logo_light} className="nav-logo" />
             {/* <img src={gameLogo} class="nav-title" /> */}
           </div>
           {/* <div id="navbar" className="nav navbar-header">
