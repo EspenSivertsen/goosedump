@@ -50,6 +50,7 @@ html {
     flex-direction: column;
     width: 100%;
     max-width: 1000px;
+    margin-bottom: 2rem;
   }
   
   section.grid, section.grid .grid-upper .grid-row, section.grid .grid-middle .grid-row, section.grid .grid-lower .grid-row {
@@ -69,7 +70,7 @@ html {
   
   section.grid .grid-lower {
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column;
     position: relative;
   }
 
@@ -79,29 +80,30 @@ html {
 
 
   section.grid .grid-upper .game-container .game-feature, section.grid .grid-middle .game-container .game-feature, section.grid .grid-lower .game-container .game-feature {
-    background: transparent;
-    border-image-slice: 1;
+    /* background: transparent;
+    border-image-slice: 1; */
     /* border-image-source: linear-gradient(to bottom, #00FFAD, #541DAB);  */
   }
 
-  .game-feature > img:hover, #games:hover {
+  .game-feature > img:hover , #games:hover {
     cursor: pointer;
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
   }
   
   .game-feature {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     align-items: center;
     /* border: 3px solid #000; */
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    transition: 0.3s;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s; */
   }
   .game-feature > h2 { 
     text-align: center;
     margin: 0;
     padding: 10px 0;
-     background-color: #dd4444; /* cf4e4e */
+    background-color: #dd4444; /* cf4e4e */
     color: #f6f4f1;
     width: 100%;
     text-transform: uppercase;
@@ -109,12 +111,15 @@ html {
   }
 
   .game-container {
-    border: 3px solid #000;
-    border-radius: 5px 5px 0 0;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #47427e;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   
   .poster {
-    height: 300px;
+    height: 15em;
     width: 100%;
     object-fit: cover;
     border-radius: 5px 5px 0 0;

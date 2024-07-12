@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import './Games.css';
 import 'react-responsive-modal/styles.css';
 import Modal from 'react-responsive-modal';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 function Games(props) {
 
@@ -38,8 +39,9 @@ function Games(props) {
     // <div id='games' className='game' onClick={handClick}>
       <div id='games'>
         
-        <div className='game-container'>
-            {<img src={props.image} className='poster' height='150px' onClick={toggleModal}/>}
+        <div className='game-container' onClick={toggleModal}>
+            {<img src={props.image} className='poster' height='150px'/>}
+            <FontAwesomeIcon icon={['fab', 'android']} />
           <div className='game-feature'>
             <h2 className='game-title'>{props.gameTitle}</h2>
           </div>
