@@ -28,6 +28,8 @@ export class Home extends React.Component {
                   gamePlatform = {android}
                   category = {"Android"}
                   image = {pissoff}
+                  icon = {['fab', 'android']}
+                  iconStyle = 'brand-android'
                   gameUrl = {"https://play.google.com/store/apps/details?id=com.GoosedumpSivertsen.PissOff"}
                 />
               </div>
@@ -47,6 +49,8 @@ export class Home extends React.Component {
                 gamePlatform = {android}
                 category = {"Android"}
                 image = {turnbasedsports}
+                icon = {['fab', 'android']}
+                iconStyle = 'brand-android'
                 gameUrl = {"https://play.google.com/store/apps/details?id=com.GoosedumpSivertsen.TurnBasedSports"}
               />
               <Games
@@ -55,6 +59,8 @@ export class Home extends React.Component {
                 gamePlatform = {android}
                 category = {"Android"}
                 image = {cupyourball}
+                icon = {['fab', 'android']}
+                iconStyle = 'brand-android'
                 gameUrl = {"https://play.google.com/store/apps/details?id=com.Espen.CupYourBall"}
               />
               <Games
@@ -63,6 +69,8 @@ export class Home extends React.Component {
                 gamePlatform = {android}
                 category = {"Android"}
                 image = {rude8ball}
+                icon = {['fab', 'android']}
+                iconStyle = 'brand-android'
                 gameUrl = {"https://play.google.com/store/apps/details?id=com.GoosedumpSivertsen.rude8ball"}
               />
             </div>
@@ -74,6 +82,8 @@ export class Home extends React.Component {
                 gamePlatform = {pc}
                 category = {"Windows"}
                 image = {toppblokk}
+                icon = {['fab', 'windows']}
+                iconStyle = 'brand-windows'
                 gameUrl = {"https://www.dropbox.com/s/1erq64cqop1991l/Topp%20Blokk.zip?dl=0"}
               />
               <Games
@@ -82,6 +92,8 @@ export class Home extends React.Component {
                 gamePlatform = {pc}
                 category = {"Windows"}
                 image = {aktaer}
+                icon = {['fab', 'windows']}
+                iconStyle = 'brand-windows'
                 gameUrl = {"https://www.dropbox.com/s/pwr9eh7zp3oqxdd/AktaEr.zip?dl=0"}
               />
               <Games
@@ -90,6 +102,8 @@ export class Home extends React.Component {
                 gamePlatform = {pc}
                 category = {"Windows"}
                 image = {tetrisshooter}
+                icon = {['fab', 'windows']}
+                iconStyle = 'brand-windows'
                 gameUrl = {"https://www.dropbox.com/s/1fkjzok4fgxe0qe/TetrisShooter.zip?dl=0"}
               />
             </div>

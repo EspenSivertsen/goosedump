@@ -40,8 +40,13 @@ function Games(props) {
       <div id='games'>
         
         <div className='game-container' onClick={toggleModal}>
+          <div className='img-container'>
             {<img src={props.image} className='poster' height='150px'/>}
-            <FontAwesomeIcon icon={['fab', 'android']} />
+            <div className='icon-container'>
+              <FontAwesomeIcon className={props.iconStyle} icon={props.icon} />
+              {/* <FontAwesomeIcon className="brand-windows" icon={['fab', 'windows']} /> */}
+            </div>
+          </div>
           <div className='game-feature'>
             <h2 className='game-title'>{props.gameTitle}</h2>
           </div>
