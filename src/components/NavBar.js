@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import { Link } from 'react-router-dom';
 import "./NavBar.css";
 import titleLogo from '../images/GoosedumpTitle.png';
 import logo from '../images/2018logo4.png';
@@ -11,11 +12,21 @@ export class NavBar extends React.Component {
     return (
       <nav>
         <div className="navbar">
-          <div className="nav">
-            <img src={titleLogo} className="nav-title" />
-            <img src={logo_light} className="nav-logo" />
-            {/* <img src={gameLogo} class="nav-title" /> */}
-          </div>
+          <Link to={'/'}>
+            <div className="nav">
+              <img src={titleLogo} className="nav-title" />
+              <img src={logo_light} className="nav-logo" />
+            </div>
+          </Link>
+          {<div id="navbar" className="nav navbar-header">
+            <div className="nav-list">
+              <ul className="nav">
+                <a href="/" className="active-nav"><li>Home</li></a>
+                <a href="#games"><li>Games</li></a>
+              </ul>
+              <button className="hamburger"></button>
+            </div>
+          </div>}
           {/* <div id="navbar" className="nav navbar-header">
             <div className="nav-list">
               <ul className="nav">

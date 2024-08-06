@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
 import './Games.css';
 import 'react-responsive-modal/styles.css';
 import Modal from 'react-responsive-modal';
@@ -8,40 +9,41 @@ function Games(props) {
 
   const [open, openModal] = useState(false);
   const [liked, setLiked] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
 
   const toggleModal = () => {
     openModal(!open)
   };
 
-//   const handClick = e => {
-//     const currTarget = e.currentTarget;   
-//     // disable all 
-//     document.querySelectorAll('.game').forEach( div => 
-//     div.classList.remove('game-expanded'))
-//     currTarget.classList.add('game-expanded');  
-// }
-
   return (
-    /**<div className='games'>
-      <div class='game-box'>
-        <div class='game-feature'>
-          {<img src={this.props.image} class='poster' height='150px' />}
-        </div>
-        <div class='game-info'>
-          <h2>{this.props.gameTitle}</h2>
-          <p>{this.props.gameDesc}</p>
-          <a href={this.props.gameUrl}>
-            <img alt='Game Platform' src={this.props.gamePlatform} height='50px' />
-          </a>
-        </div>
-      </div>
-    </div>**/
-    // <div id='games' className='game' onClick={handClick}>
       <div id='games'>
+        <Link to={`/game/${props.id}`} style={{ textDecoration: 'none' }}>
         
-        <div className='game-container' onClick={toggleModal}>
-          <div className='img-container'>
-            {<img src={props.image} className='poster' height='150px'/>}
+        {/* <div className='game-container' onClick={toggleModal}> */}
+        <div className='game-container'>
+          <div className='img-container'
+            onMouseOver={() => setIsHovered(true)}
+            onMouseOut={() => setIsHovered(false)}
+            style={{ position: 'relative', width: '100%', height: '18em' }}
+          >
+              <img
+                src={props.image}
+                alt='normal'
+                className='poster'
+                style={{
+                  position: 'absolute',
+                  opacity: isHovered ? 0 : 1,
+                }}
+              />
+              <img
+                src={props.imageHover}
+                alt='hover'
+                className='poster'
+                style={{
+                  position: 'absolute',
+                  opacity: isHovered ? 1 : 0,
+                }}
+              />
             <div className='icon-container'>
               <FontAwesomeIcon className={props.iconStyle} icon={props.icon} />
               {/* <FontAwesomeIcon className="brand-windows" icon={['fab', 'windows']} /> */}
@@ -65,8 +67,8 @@ function Games(props) {
           <div className='modal-game-info'>
             <h2>{props.gameTitle}</h2>
             <hr className='modal-game-hr'/>
-            <p>Category: {props.category}</p>
-            <p className='modal-game-description'>Description: {props.gameDesc}</p>
+            {/* <p>Category: {props.category}</p> */}
+            <p className='modal-game-description'> {props.gameDesc} </p>
           </div>
           <div className='modal-game-footer'>
             <hr className='modal-game-hr'/>
@@ -79,7 +81,8 @@ function Games(props) {
             </button> */}
           </div>
         </div>
-        </Modal>       
+        </Modal>
+        </Link>   
     </div>
   );
 }
