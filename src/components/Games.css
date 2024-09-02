@@ -120,10 +120,10 @@ html {
   } */
   
   .game-container {
-    border: 1px solid #eee;
+    border: 1px solid #00000030;
     border-radius: 8px;
     overflow: hidden;
-    background: #fff;
+    /* background: #eae125; */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
 
