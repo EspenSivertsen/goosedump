@@ -24,7 +24,7 @@ html {
     font-family: proxima-nova, Helvetica, sans-serif;
     letter-spacing: 0.05rem;
     line-height: 1.15;
-    margin: 3rem 0 1em 0;
+    /* margin: 3rem 0 1em 0; */
   }
   
   .collapse {

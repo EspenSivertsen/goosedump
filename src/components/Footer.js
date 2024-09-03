@@ -4,7 +4,7 @@ import "./Footer.css";
 export class Footer extends React.Component {
   render() {
     return (
-      <div id="footer">
+      <section id="footer">
 
 			<div className="footer-wrap">
 				<ul className="footer-navbar">
@@ -27,7 +27,7 @@ export class Footer extends React.Component {
 				</ul>
 			</div>
 
-		</div>
+		</section>
     );
   }
 }

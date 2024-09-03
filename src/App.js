@@ -3,6 +3,7 @@ import ScrollToTop from './hooks/ScrollToTop';
 import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header';
+import NavBar from './components/NavBar';
 import Home from './components/Home';
 import Footer from './components/Footer';
 import GamePage from './components/GamePage';
@@ -19,12 +20,16 @@ function App() {
         <ScrollToTop />
         <div className="App">
           <Header />
-          <div className="wrapper margin-bot">
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/game/:id" element={<GamePage />} />
-            </Routes>
-          </div>
+          <div className="content-wrapper">
+            <NavBar />
+              <div className="wrapper margin-bot">
+                <Routes>
+                  <Route path="/" element={<Home />} />
+                  <Route path="/game/:id" element={<GamePage />} />
+                </Routes>
+              </div>
+              <div className='wrapper-fill-empty'></div>
+            </div>
           <Footer />
         </div>
       </Router>

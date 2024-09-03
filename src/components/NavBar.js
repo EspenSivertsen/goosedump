@@ -1,45 +1,44 @@
 import React, {useState} from 'react'
-import { Link } from 'react-router-dom';
 import "./NavBar.css";
-import titleLogo from '../images/GoosedumpTitle.png';
 import logo from '../images/2018logo4.png';
-import logo_light from '../images/gooselogo_lighter.png';
-import gameLogo from '../images/GamesTitle.png';
 
 export class NavBar extends React.Component {
 
   render() {
     return (
-      <nav>
-        <div className="navbar">
-          <Link to={'/'}>
-            <div className="nav">
-              <img src={titleLogo} className="nav-title" />
-              <img src={logo_light} className="nav-logo" />
+      <nav className="navbar-header">
+        {/* {<div id="navbar" className="nav">
+          <div className="nav-list">
+            <img src={logo} className="header-logo" />
+            <ul className="nav">
+              <a href="/" className="active-nav"><li>Home</li></a>
+              <a href="#games"><li>Games</li></a>
+            </ul>
+            <button className="hamburger"></button>
+          </div>
+        </div>} */}
+
+        <nav class="nav">
+          <input type="checkbox" id="nav-check" />
+          <div class="nav-header">
+            <div class="nav-title">
+              Logo
             </div>
-          </Link>
-          {<div id="navbar" className="nav navbar-header">
-            <div className="nav-list">
-              <ul className="nav">
-                <a href="/" className="active-nav"><li>Home</li></a>
-                <a href="#games"><li>Games</li></a>
-              </ul>
-              <button className="hamburger"></button>
-            </div>
-          </div>}
-          {/* <div id="navbar" className="nav navbar-header">
-            <div className="nav-list">
-              <ul className="nav">
-                <a href="#home" className="active-nav"><li>Home</li></a>
-                <a href="#about"><li>About</li></a>
-                <a href="#projects"><li>Projects</li></a>
-                <a href="#games"><li>Games</li></a>
-                <a href="#contact"><li>Contact</li></a>
-              </ul>
-              <button className="hamburger"></button>
-            </div>
-          </div> */}
-        </div>
+          </div>
+          <div class="nav-btn">
+            <label for="nav-check">
+              <span></span>
+              <span></span>
+              <span></span>
+            </label>
+          </div>
+          
+          <ul class="nav-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
       </nav>
     );
   }

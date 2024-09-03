@@ -15,20 +15,28 @@ body {
   background-color: #E6E6E6; #daa520; */
 }
 
-h1, h2, h3, h4, h5, h6 {
-}
-
 .App {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   min-height: 100vh;
   width: 100%;
 }
 
 .wrapper {
-  margin: auto;
-  flex-grow: 1;
   width: 80%;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  /* justify-content: center;
+  width: 75%; */
+}
+
+.wrapper-fill-empty {
+  width: 20%;
 }
 
 .margin-bot {
@@ -44,4 +52,30 @@ h1, h2, h3, h4, h5, h6 {
 }
 #category-list {
   padding: 5px;
+}
+
+
+
+  /* RESPONSIVE */
+
+@media all and (max-width: 1000px) {
+
+}
+
+@media all and (max-width: 850px) {
+
+}
+
+@media all and (max-width: 600px) {
+  .content-wrapper {
+    flex-direction: column;
+  }
+  .wrapper {
+    margin: 0 auto;
+  }
+}
+
+@media all and (max-width: 400px) {
+
+
 }
