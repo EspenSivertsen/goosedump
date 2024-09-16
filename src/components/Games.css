@@ -262,6 +262,9 @@ html {
       display: flex;
       justify-content: center;
     }
+    .navbar-header, .wrapper-fill-empty {
+      width: unset;
+    }
   }
 
   @media all and (max-width: 600px) {

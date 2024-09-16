@@ -19,7 +19,7 @@ function App() {
       <Router>
         <ScrollToTop />
         <div className="App">
-          <Header />
+          {/* <Header /> */}
           <div className="content-wrapper">
             <NavBar />
               <div className="wrapper margin-bot">
@@ -28,7 +28,6 @@ function App() {
                   <Route path="/game/:id" element={<GamePage />} />
                 </Routes>
               </div>
-              <div className='wrapper-fill-empty'></div>
             </div>
           <Footer />
         </div>

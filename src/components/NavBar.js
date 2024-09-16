@@ -21,9 +21,9 @@ export class NavBar extends React.Component {
         <nav class="nav">
           <input type="checkbox" id="nav-check" />
           <div class="nav-header">
-            <div class="nav-title">
-              Logo
-            </div>
+            {/* <div class="nav-title">
+              <img src={logo} className="header-logo" />
+            </div> */}
           </div>
           <div class="nav-btn">
             <label for="nav-check">
@@ -34,6 +34,9 @@ export class NavBar extends React.Component {
           </div>
           
           <ul class="nav-list">
+            <div class="nav-title">
+              <img src={logo} className="header-logo" />
+            </div>
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Contact</a></li>

@@ -14,7 +14,7 @@ export class Header extends React.Component {
         <Link to={'/'}>
           <div className="header">
             <img src={titleLogo} className="header-title" />
-            <img src={logo_light} className="header-logo" />
+            {/* <img src={logo_light} className="header-logo" /> */}
           </div>
         </Link>
       </section>
