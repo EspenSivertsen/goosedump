@@ -17,10 +17,10 @@ function Games(props) {
 
   return (
       <div id='games'>
-        <Link to={`/game/${props.id}`} style={{ textDecoration: 'none' }}>
+        {/* <Link to={`/game/${props.id}`} style={{ textDecoration: 'none' }}> */}
         
-        {/* <div className='game-container' onClick={toggleModal}> */}
-        <div className='game-container'>
+        <div className='game-container' onClick={toggleModal}>
+        {/* <div className='game-container'> */}
           <div className='img-container'
             onMouseOver={() => setIsHovered(true)}
             onMouseOut={() => setIsHovered(false)}
@@ -82,7 +82,7 @@ function Games(props) {
           </div>
         </div>
         </Modal>
-        </Link>   
+        {/* </Link>    */}
     </div>
   );
 }

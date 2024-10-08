@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import { Link } from 'react-router-dom';
 import "./NavBar.css";
 import logo from '../images/2018logo4.png';
 
@@ -37,9 +38,9 @@ export class NavBar extends React.Component {
             <div class="nav-title">
               <img src={logo} className="header-logo" />
             </div>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><Link to={'/'}><a href="/">Games</a></Link></li>
+            <li><Link to={'/prototypes'}><a href="#">Prototypes</a></Link></li>
+            <li><Link to={'/'}><a href="#">Other</a></Link></li>
           </ul>
         </nav>
       </nav>

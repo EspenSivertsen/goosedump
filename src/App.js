@@ -22,12 +22,14 @@ function App() {
           {/* <Header /> */}
           <div className="content-wrapper">
             <NavBar />
-              <div className="wrapper margin-bot">
+              <div className="wrapper">
                 <Routes>
                   <Route path="/" element={<Home />} />
+                  {/* <Route path="/prototypes" element={<Prototypes />} /> */}
                   <Route path="/game/:id" element={<GamePage />} />
                 </Routes>
               </div>
+              <div className="wrapper-fill-empty"></div>
             </div>
           <Footer />
         </div>

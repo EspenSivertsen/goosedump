@@ -8,7 +8,7 @@
 --slate-blue: #7067cfff; */
 
 html {
-  scrollbar-gutter: stable;
+  /* scrollbar-gutter: stable; */
 }
 
 .flex-container {
@@ -24,7 +24,7 @@ html {
     font-family: proxima-nova, Helvetica, sans-serif;
     letter-spacing: 0.05rem;
     line-height: 1.15;
-    /* margin: 3rem 0 1em 0; */
+    margin: 1em 0 1em 0;
   }
   
   .collapse {
@@ -84,40 +84,6 @@ html {
     flex: 1 1 100%; /* Full width for the first item */
     margin-bottom: 1rem; /* Space below the full-width item */
   }
-
-  /* section.grid {
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 1000px;
-    margin-bottom: 2rem;
-  }
-  
-  section.grid, section.grid .grid-upper .grid-row, section.grid .grid-middle .grid-row, section.grid .grid-lower .grid-row {
-    display: flex;
-    position: relative;
-    gap: 1rem;
-  }
-  
-  .grid-upper, .grid-lower {
-    gap: 1rem;
-  }
-  
-  section.grid .grid-upper .grid-row {
-    position: relative;
-    justify-items: center;
-  }
-  
-  section.grid .grid-lower {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-  }
-
-  section.grid .grid-lower .game-container {
-    z-index: 1;
-  } */
   
   .game-container {
     border: 1px solid #00000030;
@@ -126,12 +92,6 @@ html {
     /* background: #eae125; */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
-
-  /* .game-container {
-    border: 2px solid #47427e;
-    border-radius: 10px 10px 0 0;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  } */
 
   .img-container {
     position: relative;
@@ -244,13 +204,13 @@ html {
   /* RESPONSIVE */
 
   @media all and (max-width: 1000px) {
-    /* .wrapper {
-      width: 100%;
-    } */
     #games {
       display: flex;
       justify-content: center;
       flex-direction: column;
+    }
+    .grid-item {
+      flex-basis: calc(40%);
     }
   }
 
@@ -264,6 +224,12 @@ html {
     }
     .navbar-header, .wrapper-fill-empty {
       width: unset;
+    }
+    .wrapper {
+      width: 90%;
+    }
+    .game-header {
+      margin-top: 3em;
     }
   }
 
@@ -280,7 +246,7 @@ html {
       justify-content: center;
     }
     .modal-game {
-      width: 400px;
+      width: 300px;
       height: auto;
     }
     .modal-game-info {
