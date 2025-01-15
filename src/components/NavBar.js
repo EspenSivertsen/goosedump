@@ -39,8 +39,8 @@ export class NavBar extends React.Component {
               <img src={logo} className="header-logo" />
             </div>
             <li><Link to={'/'}><a href="/">Games</a></Link></li>
-            <li><Link to={'/prototypes'}><a href="#">Prototypes</a></Link></li>
-            <li><Link to={'/'}><a href="#">Other</a></Link></li>
+            {/* <li><Link to={'/prototypes'}><a href="#">Prototypes</a></Link></li> */}
+            {/* <li><Link to={'/'}><a href="#">Other</a></Link></li> */}
           </ul>
         </nav>
       </nav>
