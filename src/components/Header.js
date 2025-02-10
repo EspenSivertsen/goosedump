@@ -5,6 +5,7 @@ import titleLogo from '../images/GoosedumpTitle.png';
 import logo from '../images/2018logo4.png';
 import logo_light from '../images/gooselogo_lighter.png';
 import gameLogo from '../images/GamesTitle.png';
+import header from '../images/header.png';
 
 export class Header extends React.Component {
 
@@ -13,8 +14,7 @@ export class Header extends React.Component {
       <section id="header">
         <Link to={'/'}>
           <div className="header">
-            <img src={titleLogo} className="header-title" />
-            {/* <img src={logo_light} className="header-logo" /> */}
+            <img src={header} className="header-title" />
           </div>
         </Link>
       </section>
