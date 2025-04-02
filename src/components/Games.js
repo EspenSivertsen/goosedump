@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './Games.css';
 import 'react-responsive-modal/styles.css';
 import Modal from 'react-responsive-modal';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 function Games(props) {
 
@@ -50,7 +50,7 @@ function Games(props) {
             </div>
           </div>
           <div className='game-feature'>
-            <h6 className='game-title'>{props.gameTitle}</h6>
+            <h2 className='game-title'>{props.gameTitle}</h2>
           </div>
         </div>
         
