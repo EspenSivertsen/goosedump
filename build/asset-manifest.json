@@ -1,23 +1,26 @@
 {
   "files": {
-    "main.css": "/goosedump/static/css/main.5d40742a.chunk.css",
-    "main.js": "/goosedump/static/js/main.8390bda6.chunk.js",
-    "main.js.map": "/goosedump/static/js/main.8390bda6.chunk.js.map",
-    "runtime-main.js": "/goosedump/static/js/runtime-main.9b20836b.js",
-    "runtime-main.js.map": "/goosedump/static/js/runtime-main.9b20836b.js.map",
-    "static/js/2.c953d227.chunk.js": "/goosedump/static/js/2.c953d227.chunk.js",
-    "static/js/2.c953d227.chunk.js.map": "/goosedump/static/js/2.c953d227.chunk.js.map",
-    "index.html": "/goosedump/index.html",
-    "precache-manifest.b432058a67d74a2c6194112a562b0d8f.js": "/goosedump/precache-manifest.b432058a67d74a2c6194112a562b0d8f.js",
-    "service-worker.js": "/goosedump/service-worker.js",
-    "static/css/main.5d40742a.chunk.css.map": "/goosedump/static/css/main.5d40742a.chunk.css.map",
-    "static/js/2.c953d227.chunk.js.LICENSE.txt": "/goosedump/static/js/2.c953d227.chunk.js.LICENSE.txt",
-    "static/media/logo.svg": "/goosedump/static/media/logo.ee7cd8ed.svg"
+    "main.css": "/static/css/main.c89185e7.css",
+    "main.js": "/static/js/main.b6f8f6ad.js",
+    "static/media/game-pissoff.png": "/static/media/game-pissoff.67deef07545a0d649d4b.png",
+    "static/media/game-turnbasedsports.jpg": "/static/media/game-turnbasedsports.31e63a1c36820e68a212.jpg",
+    "static/media/game-toppblokk.png": "/static/media/game-toppblokk.97dfe549c1ec21ab2f9d.png",
+    "static/media/game-tetrisshooter.png": "/static/media/game-tetrisshooter.ef62bc6ae004bc63d24f.png",
+    "static/media/game-cupyourball.jpg": "/static/media/game-cupyourball.57442e5fd25125b67d60.jpg",
+    "static/media/game-aktaer.png": "/static/media/game-aktaer.45ae881da202a5f86446.png",
+    "static/media/2018logo4.png": "/static/media/2018logo4.4613b84cfaad945fc965.png",
+    "static/media/game-rude8ball.png": "/static/media/game-rude8ball.5349e68f45edab93287e.png",
+    "static/media/game-main-turnbasedsports.png": "/static/media/game-main-turnbasedsports.5cc727d270b10f9b2b00.png",
+    "static/media/gooselogo_lighter.png": "/static/media/gooselogo_lighter.df056a4f70cfe2c02a49.png",
+    "static/media/GoosedumpTitle.png": "/static/media/GoosedumpTitle.11d99f9cd5ce3c704757.png",
+    "static/media/GamesTitle.png": "/static/media/GamesTitle.bf3ffafaaaa905044d69.png",
+    "static/media/logo.svg": "/static/media/logo.2d27ead7c10f774c5306bcf3c257a728.svg",
+    "index.html": "/index.html",
+    "main.c89185e7.css.map": "/static/css/main.c89185e7.css.map",
+    "main.b6f8f6ad.js.map": "/static/js/main.b6f8f6ad.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.9b20836b.js",
-    "static/js/2.c953d227.chunk.js",
-    "static/css/main.5d40742a.chunk.css",
-    "static/js/main.8390bda6.chunk.js"
+    "static/css/main.c89185e7.css",
+    "static/js/main.b6f8f6ad.js"
   ]
 }
