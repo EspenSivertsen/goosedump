@@ -34,13 +34,6 @@ function App() {
           <Footer />
         </div>
       </Router>
-      // <div className="App">
-      //   <Header />
-      //   <div className="wrapper margin-bot">
-      //     <Home />
-      //   </div>
-      //   <Footer />
-      // </div>
     );
 }
 

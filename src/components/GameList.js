@@ -1,11 +1,18 @@
 import pissoff from '../images/game-pissoff.png';
+import pissoffHover from '../images/game-pissoff.png';
 import turnbasedsports from '../images/game-main-turnbasedsports.png';
 import turnbasedsportsHover from '../images/game-turnbasedsports.jpg';
 import cupyourball from '../images/game-cupyourball.jpg';
+import cupyourballHover from '../images/game-cupyourball.jpg';
 import tetrisshooter from '../images/game-tetrisshooter.png';
+import tetrisshooterHover from '../images/game-tetrisshooter.png';
 import toppblokk from '../images/game-toppblokk.png';
-import aktaer from '../images/game-aktaer.png';
+import toppblokkHover from '../images/game-toppblokk.png';
+import aktaer from '../images/game-aktaer-logo.png';
+import aktaerHover from '../images/game-aktaer.png';
 import rude8ball from '../images/game-rude8ball.png';
+import rude8ballHover from '../images/game-rude8ball.png';
+
 import pc from '../images/download.png';
 import android from '../images/google-play-badge.png';
 
@@ -17,7 +24,7 @@ export const GameList = [
     gamePlatform: android,
     category: 'Android',
     image: pissoff,
-    imageHover: turnbasedsports,
+    imageHover: pissoffHover,
     icon: ['fab', 'android'],
     iconStyle: 'brand-android',
     gameUrl: 'https://play.google.com/store/apps/details?id=com.GoosedumpSivertsen.PissOff',
@@ -41,7 +48,7 @@ export const GameList = [
     gamePlatform: android,
     category: 'Android',
     image: cupyourball,
-    imageHover: turnbasedsports,
+    imageHover: cupyourballHover,
     icon: ['fab', 'android'],
     iconStyle: 'brand-android',
     gameUrl: 'https://play.google.com/store/apps/details?id=com.Espen.CupYourBall',
@@ -53,7 +60,7 @@ export const GameList = [
     gamePlatform: android,
     category: 'Android',
     image: rude8ball,
-    imageHover: turnbasedsports,
+    imageHover: rude8ballHover,
     icon: ['fab', 'android'],
     iconStyle: 'brand-android',
     gameUrl: 'https://play.google.com/store/apps/details?id=com.GoosedumpSivertsen.rude8ball',
@@ -65,7 +72,7 @@ export const GameList = [
     gamePlatform: pc,
     category: 'Windows',
     image: toppblokk,
-    imageHover: turnbasedsports,
+    imageHover: toppblokkHover,
     icon: ['fab', 'windows'],
     iconStyle: 'brand-windows',
     gameUrl: 'https://www.dropbox.com/s/1erq64cqop1991l/Topp%20Blokk.zip?dl=0',
@@ -77,7 +84,7 @@ export const GameList = [
     gamePlatform: pc,
     category: 'Windows',
     image: aktaer,
-    imageHover: turnbasedsports,
+    imageHover: aktaerHover,
     icon: ['fab', 'windows'],
     iconStyle: 'brand-windows',
     gameUrl: 'https://www.dropbox.com/s/pwr9eh7zp3oqxdd/AktaEr.zip?dl=0',
@@ -85,11 +92,11 @@ export const GameList = [
   {
     id: 'tetris-shooter',
     gameTitle: 'Tetris Shooter',
-    gameDesc: 'The tetrominos have gone rogue, take out the other before he takes you out.',
+    gameDesc: 'The tetrominos have gone rogue, take out the enemy.', //BUG: if text is too long, instead of going to new line. jumps under image
     gamePlatform: pc,
     category: 'Windows',
     image: tetrisshooter,
-    imageHover: turnbasedsports,
+    imageHover: tetrisshooterHover,
     icon: ['fab', 'windows'],
     iconStyle: 'brand-windows',
     gameUrl: 'https://www.dropbox.com/s/1fkjzok4fgxe0qe/TetrisShooter.zip?dl=0',
