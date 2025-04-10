@@ -1,14 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.c89185e7.css",
-    "main.js": "/static/js/main.b6f8f6ad.js",
+    "main.js": "/static/js/main.3fbe2799.js",
     "static/media/game-pissoff.png": "/static/media/game-pissoff.67deef07545a0d649d4b.png",
     "static/media/game-turnbasedsports.jpg": "/static/media/game-turnbasedsports.31e63a1c36820e68a212.jpg",
     "static/media/game-toppblokk.png": "/static/media/game-toppblokk.97dfe549c1ec21ab2f9d.png",
     "static/media/game-tetrisshooter.png": "/static/media/game-tetrisshooter.ef62bc6ae004bc63d24f.png",
     "static/media/game-cupyourball.jpg": "/static/media/game-cupyourball.57442e5fd25125b67d60.jpg",
-    "static/media/game-aktaer.png": "/static/media/game-aktaer.45ae881da202a5f86446.png",
     "static/media/2018logo4.png": "/static/media/2018logo4.4613b84cfaad945fc965.png",
+    "static/media/game-aktaer-logo.png": "/static/media/game-aktaer-logo.11bec7e656585fe37959.png",
+    "static/media/game-aktaer.png": "/static/media/game-aktaer.6241fc24cdb70cfa9024.png",
     "static/media/game-rude8ball.png": "/static/media/game-rude8ball.5349e68f45edab93287e.png",
     "static/media/game-main-turnbasedsports.png": "/static/media/game-main-turnbasedsports.5cc727d270b10f9b2b00.png",
     "static/media/gooselogo_lighter.png": "/static/media/gooselogo_lighter.df056a4f70cfe2c02a49.png",
@@ -17,10 +18,10 @@
     "static/media/logo.svg": "/static/media/logo.2d27ead7c10f774c5306bcf3c257a728.svg",
     "index.html": "/index.html",
     "main.c89185e7.css.map": "/static/css/main.c89185e7.css.map",
-    "main.b6f8f6ad.js.map": "/static/js/main.b6f8f6ad.js.map"
+    "main.3fbe2799.js.map": "/static/js/main.3fbe2799.js.map"
   },
   "entrypoints": [
     "static/css/main.c89185e7.css",
-    "static/js/main.b6f8f6ad.js"
+    "static/js/main.3fbe2799.js"
   ]
 }
