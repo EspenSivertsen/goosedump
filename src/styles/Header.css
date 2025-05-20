@@ -1,0 +1,29 @@
+/* CSS FOR HEADER.js */
+
+#header {
+    height: 100px;
+    background-color: aquamarine;
+}
+
+#header a {
+    text-decoration: none;
+}
+
+.header {
+    margin: 0;
+    padding: 2em 0;
+    list-style: none;
+    text-align: left;
+  }
+  
+  .header-logo {
+    display: inline-block;
+    max-width: 150px;
+    border-radius: 45px;
+    padding: 1em;
+  }
+
+  .header-title {
+    margin: 0 1em;
+    color: yellow;
+  }

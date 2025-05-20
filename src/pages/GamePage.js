@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import { GameList } from './GameList';
+import { GameList } from '../components/GameList';
 
 const GamePage = () => {
   const { id } = useParams();

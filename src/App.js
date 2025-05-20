@@ -4,10 +4,10 @@ import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header';
 import NavBar from './components/NavBar';
-import Home from './components/Home';
+import Home from './pages/Home';
 import Footer from './components/Footer';
-import GamePage from './components/GamePage';
-import ReactDOM from 'react-dom';
+import GamePage from './pages/GamePage';
+import GamesPage from './pages/GameListPage';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
@@ -25,8 +25,9 @@ function App() {
               <div className="wrapper">
                 <Routes>
                   <Route path="/" element={<Home />} />
+                  <Route path='/games' element={<GamesPage />} />
                   {/* <Route path="/prototypes" element={<Prototypes />} /> */}
-                  <Route path="/game/:id" element={<GamePage />} />
+                  <Route path="/games/:id" element={<GamePage />} />
                 </Routes>
               </div>
               <div className="wrapper-fill-empty"></div>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
-import './Games.css';
+import '../styles/Games.css';
 import 'react-responsive-modal/styles.css';
 import Modal from 'react-responsive-modal';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -17,7 +17,7 @@ function Games(props) {
 
   return (
       <div id='games'>
-        {/* <Link to={`/game/${props.id}`} style={{ textDecoration: 'none' }}> */}
+        <Link to={`/games/${props.id}`} style={{ textDecoration: 'none' }}>
         
         <div className='game-container' onClick={toggleModal}>
         {/* <div className='game-container'> */}
@@ -82,7 +82,7 @@ function Games(props) {
           </div>
         </div>
         </Modal>
-        {/* </Link>    */}
+        </Link>   
     </div>
   );
 }
