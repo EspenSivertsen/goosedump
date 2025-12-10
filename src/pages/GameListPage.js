@@ -7,7 +7,7 @@ export class GamesPage extends React.Component {
   render() {
     return (
         <div>
-            <h1 className="game-header">My Games</h1>
+            <h1 className="game-header">Games</h1>
             <section className="grid">
 
             {GameList.map((game, index) => (

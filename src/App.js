@@ -20,8 +20,8 @@ function App() {
         <ScrollToTop />
         <div className="App">
           {/* <Header /> */}
+          <NavBar />
           <div className="content-wrapper">
-            <NavBar />
               <div className="wrapper">
                 <Routes>
                   <Route path="/" element={<Home />} />
@@ -30,7 +30,6 @@ function App() {
                   <Route path="/games/:id" element={<GamePage />} />
                 </Routes>
               </div>
-              <div className="wrapper-fill-empty"></div>
             </div>
           <Footer />
         </div>
